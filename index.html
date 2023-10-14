@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manoela Coelho | Desenvolvedora Front-End</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="icon" href="./dist/images/favicon (1).ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <a class="header__title" href="#inicio"><  <span>Manoela</span> /></a>
+            <a class="header__title" href="#inicio"> <span>< Manoela /></span> </a>
             <nav class="header__nav">
                 <ul>
                     <li class="header__li">
@@ -34,15 +36,48 @@
             </nav>
         </div>
     </header>
-    <section class="section" id="inicio">
-        <div class="section__container">
+
+    <section class="section1" id="inicio">
+        <div class="section1__container">
             <div>
                 <p>Hello, world! Me chamo <b>Manoela Coelho</b> e eu sou</p>
                 <h1 class="texto-colorido">Desenvolvedora Front-End</h1>
                 <button class="botao"><a href="">Currículo</a></button>
             </div>
-            <img class="store-front" src="./dist/images/undraw_web_devices_re_m8sc.svg" alt="Fachada da loja Games Shop">
+            <div >
+                <img data-aos="fade-left" src="./dist/images/undraw_web_devices_re_m8sc.svg" alt="Balão da boneca com os dispositivos">
+            </div>
+        </div>
+        <div class="section1__setas">
+            <img class="section1__setas__img" src="./dist/images/seta2.png" alt="Duas setas brancas">
         </div>
     </section>
+
+    <section class="section2" id="sobre">
+        <div data-aos="flip-up" class="section2__container">
+            <div class="section2__container__sobre">
+                <h2>Sobre Mim</h2>
+                <div class="section2__container__sobre__infos">
+                    <div class="section2__container__sobre__infos__img">
+                        <img src="./dist/images/WhatsApp Image 2023-10-12 at 20.21.39.jpeg" alt="">
+                    </div>
+                    <ul>
+                        <li>Olá! Meu nome é Manoela, mas pode me chamar de Manô;</li>
+                        <li>Tenho 18 anos e sou do signo de Touro;</li>
+                        <li>Estou cursando Desenvolvimento Full-Stack Python na EBAC (Escola Britânica de Artes Criativas e Tecnologia);</li>
+                        <li>Concluí o Ensino Médio em 2022;</li>
+                        <li>Moro em Florianópolis/SC;</li>
+                        <li>Estou em busca da minha primeira oportunidade como Desenvolvedora Jr.;</li>
+                        <li class="li-sem-bottom">Veja abaixo minhas habilidades e alguns projetos que realizei para colocar em prática meus conhecimentos!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
