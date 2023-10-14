@@ -18,12 +18,19 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                max-width: 1240px;
-                width: 100%;
-                margin: 0 auto;
-                padding: 0 0 50px;
+                margin-bottom: 15px;
                 font-size: 32px;
                 color: variaveis.$cor-azul1;
+            }
+
+            h3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 50px;
+                font-weight: normal;
+                letter-spacing: 2px;
+                font-size: 13px;
             }
 
             ul {

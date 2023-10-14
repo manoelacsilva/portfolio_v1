@@ -3,20 +3,23 @@
 .section1 {
     align-items: flex-start;
     color: variaveis.$cor-branco;
-    padding: 24px 0;
+    padding: 324px 0 24px;
     background-color: variaveis.$cor-cinza-fundo2;
-    margin: 200px 0 50px;
+    margin: 0 0 50px;
 
     img {
         width: 500px;
     }
 
-    h1 {
+    #typed-text {
         font-size: 50px;
         background-image: linear-gradient(to right, variaveis.$cor-azul1, variaveis.$cor-azul2);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+        white-space: nowrap; /* Evita quebra de linha */
+        overflow: hidden; /* Esconde texto além da largura do elemento */
+        // border-right: .15em solid variaveis.$cor-branco; /* Simula o cursor de digitação */
     }
 
     &__container {
@@ -29,7 +32,7 @@
     }
 
     button {
-        padding: 8px;
+        padding: 9px 8px 6px;
         border-radius: 30px;
         border: 2px solid variaveis.$cor-branco;
         background-color: variaveis.$cor-cinza-fundo1;
