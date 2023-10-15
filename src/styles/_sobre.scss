@@ -4,6 +4,34 @@
     background-color: variaveis.$cor-cinza-fundo1;
     padding: 80px 0;
 
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 32px;
+        color: variaveis.$cor-azul1;
+        border-bottom: 3px solid variaveis.$cor-azul1;
+        max-width: 200px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        font-size: 13px;
+        color: variaveis.$cor-branco;
+    }
+
     &__container {
         &__sobre {
             max-width: 1240px;
@@ -13,25 +41,6 @@
             padding: 50px;
             border-radius: 20px;
             color: variaveis.$cor-branco;
-
-            h2 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 15px;
-                font-size: 32px;
-                color: variaveis.$cor-azul1;
-            }
-
-            h3 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 50px;
-                font-weight: normal;
-                letter-spacing: 2px;
-                font-size: 13px;
-            }
 
             ul {
                 width: 100%;
