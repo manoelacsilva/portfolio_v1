@@ -81,4 +81,108 @@
             }
         }
     }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        opacity: 0;
+        transform: scale(0);
+        //transition: opacity .25s, transform 0.25s ;
+
+        .modal-content {
+            width: 90%;
+            max-width: 580px;
+            height: auto;
+            background-color: variaveis.$cor-cinza-fundo2;
+            padding: 50px;
+            border-radius: 20px;
+            position: relative;
+            border: 2px solid variaveis.$cor-preto;
+            box-shadow: 0 0 11px 11px rgba(0, 0, 0, 0.5);
+
+            .fechar {
+                position: absolute;
+                top: 0;
+                right: 0.5%;
+                max-width: 36px;
+                z-index: 1;
+                cursor: pointer;
+                color: variaveis.$cor-branco;
+                margin: 7px 4px 0 0;
+            }
+
+            .modal-img-projeto {
+                border-radius: 20px;
+                width: 100%; 
+                max-height: 267px;
+            }
+
+            .title {
+                font-size: 24px;
+                margin-bottom: 15px;
+                text-align: center;
+                color: variaveis.$cor-azul1;
+                //border-bottom: 3px solid variaveis.$cor-azul1;
+                width: 100%;
+                //border-radius: 10px;
+                //padding-bottom: 5px;
+            }
+
+            .text {
+                color: variaveis.$cor-branco;
+                margin: 0 0 50px;
+            }
+
+            .links {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                height: 50px;
+                margin-top: 50px;
+
+                a {
+                    background-color: variaveis.$cor-cinza-fundo1;
+                    border-radius: 30px;
+                    transition: all .7s ease;
+                    text-decoration: none;
+                    color: variaveis.$cor-branco;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    border: 1px solid variaveis.$cor-branco;
+                    min-width: 140px;
+
+                    img {
+                        max-width: 26px;
+                        width: 100%;
+                        margin-right: 10px;
+                    }
+
+                    span {
+                        margin-top: 4.5px;
+                    }
+                }
+
+                a:hover {
+                    background-color: variaveis.$cor-preto;
+                }
+            }
+        }
+    }
+
+    .modal-visivel {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

@@ -16,3 +16,13 @@ body {
     background-color: variaveis.$cor-cinza-fundo2;
     overflow-x: hidden;
 }
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: variaveis.$cor-preto;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: variaveis.$cor-azul1;
+    border-radius: 6px;
+}
