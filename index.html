@@ -42,14 +42,16 @@
             <div>
                 <p>Hello, world! Me chamo <b>Manoela Coelho</b> e eu sou</p>
                 <h1 id="typed-text"></h1>
-                <button class="botao"><a href="">Currículo</a></button>
+                <a class="botao" href="">Download CV</a>
             </div>
             <div >
                 <img data-aos="fade-left" data-aos-duration="1500" src="./dist/images/undraw_web_devices_re_m8sc.svg" alt="Balão da boneca com os dispositivos">
             </div>
         </div>
         <div class="section1__setas">
-            <img class="section1__setas__img" src="./dist/images/seta2.png" alt="Duas setas brancas">
+            <a href="#sobre">
+                <img class="section1__setas__img" src="./dist/images/seta2.png" alt="Duas setas brancas">
+            </a>
         </div>
     </section>
 
@@ -154,6 +156,7 @@
                 <div class="infos">
                     <h2 class="title"></h2>
                     <p class="text"></p>
+                    <p class="techs"></p>
                 </div>
                 <img src="" class="modal-img-projeto" alt="print do projeto">
                 <div class="links">
@@ -198,6 +201,47 @@
                     <img class="img-projeto" src="./dist/images/Fuoco Degli Dei _ Ristorante Italiano.png" alt="Fuoco Degli Dei">
                     <button class="projeto saiba-mais" type="button">Saiba Mais</button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5" id="contato">
+        <div class="section5__title">
+            <h2>Contato</h2>
+            <h3>Me mande uma mensagem!</h3>
+        </div>
+        <div data-aos="flip-up" data-aos-duration="1500" class="section5__container">
+            <form class="section5__container__form" action="https://formsubmit.co/manoelacs62@gmail.com" method="POST">
+                <div class="campos">
+                    <label for="nome">Nome:</label>
+                    <input name="name" type="text" id="nome" required placeholder="Digite seu nome">
+                </div>
+                <div class="campos">
+                    <label for="email">E-mail:</label>
+                    <input name="email" type="email" id="email" required placeholder="Digite seu e-mail">
+                </div>
+                <div class="campos">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="message" id="mensagem" required placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="section5__container__redes">
+                <a href="mailto:manoelacs62@gmail.com" class="sociais mb">
+                    <img src="./dist/images/email2.png" alt="">
+                    <h3>E-mail</h3>
+                    <p>manoelacs62@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/manoela-fullstack-python/" class="sociais mb">
+                    <img src="./dist/images/linkedin.png" alt="">
+                    <h3>LinkedIn</h3>
+                    <p>Manoela Coelho</p>
+                </a>
+                <a href="https://github.com/manoelacsilva" class="sociais">
+                    <img src="./dist/images/github_logo.png" alt="">
+                    <h3>GitHub</h3>
+                    <p>manoelacsilva</p>
+                </a>
             </div>
         </div>
     </section>

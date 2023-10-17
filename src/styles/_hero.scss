@@ -3,9 +3,9 @@
 .section1 {
     align-items: flex-start;
     color: variaveis.$cor-branco;
-    padding: 324px 0 30px;
+    padding: 324px 0 100px;
     background-color: variaveis.$cor-cinza-fundo2;
-    margin: 0 0 50px;
+    //margin: 0 0 50px;
 
     img {
         width: 500px;
@@ -31,29 +31,28 @@
         margin: 0 auto;
     }
 
-    button {
-        padding: 9px 8px 6px;
+    .botao {
+        padding: 11px 8px 8px;
         border-radius: 30px;
         border: 2px solid variaveis.$cor-branco;
         background-color: variaveis.$cor-cinza-fundo1;
         width: 200px;
         margin-top: 35px;
+        height: 40px;
         transition: all .7s ease;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        color: variaveis.$cor-branco;
+        letter-spacing: 2px;
 
         &:hover {
             background-color: variaveis.$cor-preto;
         }
-
-        a {
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            display: flex;
-            justify-content: center;
-            color: variaveis.$cor-branco;
-            letter-spacing: 2px;
-        }
     }
+
 
     p {
         font-size: 24px;

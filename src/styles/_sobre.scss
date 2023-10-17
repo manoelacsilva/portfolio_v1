@@ -2,12 +2,15 @@
 
 .section2 {
     background-color: variaveis.$cor-cinza-fundo1;
-    padding: 80px 0;
+    padding: 100px 0;
 
     &__title {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
     }
 
     h2 {
