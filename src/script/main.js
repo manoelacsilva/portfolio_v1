@@ -1,5 +1,7 @@
 AOS.init();
 
+// Título h1 - Hero
+
 document.addEventListener("DOMContentLoaded", function () {
     const textElement = document.getElementById("typed-text");
     const textToType = "Desenvolvedora Front-End";
@@ -114,3 +116,27 @@ saibaMais.forEach((projeto, index) => {
 
 buttonFecharModal.addEventListener('click', fecharModal);
 // modalProjetos.addEventListener('click', fecharModal);
+
+// Botão subir para Hero - Fixo
+
+document.addEventListener('DOMContentLoaded', function() {
+    function scrollFunction() {
+        let heroSection = document.querySelector(".hero");
+        let button = document.querySelector(".voltar-ao-topo");
+
+        if (document.body.scrollTop > heroSection.clientHeight || document.documentElement.scrollTop > heroSection.clientHeight) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    document.querySelector(".voltar-ao-topo").addEventListener("click", function() {
+        document.body.scrollTop = 0;          // para navegadores Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+    });
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+});

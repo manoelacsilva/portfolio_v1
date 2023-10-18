@@ -1,0 +1,61 @@
+@use 'variaveis';
+
+.footer {
+    background-color: variaveis.$cor-cinza-fundo1;
+    padding: 40px;
+
+    &__container {
+        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            text-decoration: none;
+            color: variaveis.$cor-branco;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        &__p1 {
+            color: variaveis.$cor-branco;
+            font-size: 16px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+
+        &__redes {
+            display: flex;
+
+            a {
+                text-decoration: none;
+
+                img {
+                    max-width: 32px;
+                    width: 100%;
+                    margin: 20px 0;
+                }
+
+                .linkedin {
+                    margin: 20px 15px;
+                }
+            }
+        }
+
+        &__p2 {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            color: variaveis.$cor-branco;
+            font-size: 13px;
+            white-space: nowrap;
+
+            span {
+                padding: 0 0 3px 3px;
+                font-size: 19px;
+            }
+        }
+    }
+}

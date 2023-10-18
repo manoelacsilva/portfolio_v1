@@ -14,11 +14,11 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <a class="header__title" href="#inicio"> <span>< Manoela /></span> </a>
+            <a class="header__title" href="" id="inicio"> <span>< Manoela /></span> </a>
             <nav class="header__nav">
                 <ul>
                     <li class="header__li">
-                        <a href="#inicio">Início</a>
+                        <a id="inicio" href="">Início</a>
                     </li>
                     <li class="header__li">
                         <a href="#sobre">Sobre Mim</a>
@@ -37,7 +37,13 @@
         </div>
     </header>
 
-    <section class="section1" id="inicio">
+    <main>
+        <button id="inicio" class="voltar-ao-topo">
+            <img class="arrow" src="./dist/images/seta_branca.png" alt="button-back-home">
+        </button>
+    </main>
+
+    <section class="section1 hero" id="inicio">
         <div class="section1__container">
             <div>
                 <p>Hello, world! Me chamo <b>Manoela Coelho</b> e eu sou</p>
@@ -246,7 +252,26 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <a class="footer__container__title" href="" id="inicio"> <span>< Manoela /></span> </a>
+            <p class="footer__container__p1">Me acompanhe nas redes</p>
+            <div class="footer__container__redes">
+                <a href="https://www.instagram.com/hello.manoela/">
+                    <img src="./dist/images/insta.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/manoela-fullstack-python/" class="sociais mb">
+                    <img class="linkedin" src="./dist/images/linkedin.png" alt="">
+                </a>
+                <a href="https://github.com/manoelacsilva" class="sociais">
+                    <img src="./dist/images/github_logo.png" alt="">
+                </a>
+            </div>
+            <p class="footer__container__p2">&copy; 2023 Manoela Coelho - Todos os direitos reservados - Feito por mim <span>♡</span> </p>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="src/script/main.js"></script>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>

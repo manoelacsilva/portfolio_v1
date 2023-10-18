@@ -5,6 +5,7 @@
 @use 'habilidades';
 @use 'projetos';
 @use 'contato';
+@use 'footer';
 
 * {
     margin: 0;
@@ -26,4 +27,30 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-thumb {
     background-color: variaveis.$cor-azul1;
     border-radius: 6px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+
+.voltar-ao-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    background-color: variaveis.$cor-preto;
+    transition: all .7s ease;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: variaveis.$cor-azul1;
+    }
 }
