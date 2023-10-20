@@ -65,7 +65,7 @@ const projetos = [
     },
     {
         title: 'Clone da Landing Page da Disney+',
-        src: './dist/images/Disney+ _ Clone.png',
+        src: './dist/images/DisneyPlusClone.png',
         text: 'Esta Landing Page é um clone do site da Disney+. Usei JavaScript para criar a dinâmica do header, nas abas da section de atrações e para fazer o accordion da section FAQ.',
         tech: 'Feito com: Git, HTML5, SCSS, Gulp e JS.',
         code: 'https://github.com/manoelacsilva/disneyplus_clone',
