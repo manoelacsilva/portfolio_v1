@@ -5,6 +5,10 @@
     padding: 100px 0;
     margin-top: 10px;
 
+    @media (max-width: 480px) {
+        padding: 50px 30px;
+    }
+
     &__title {
         display: flex;
         flex-direction: column;
@@ -24,6 +28,11 @@
         width: 100%;
         border-radius: 10px;
         padding-bottom: 5px;
+
+        @media (max-width: 480px) {
+            font-size: 24px;
+            max-width: 150px;
+        }
     }
 
     h3 {
@@ -35,6 +44,10 @@
         letter-spacing: 2px;
         font-size: 13px;
         color: variaveis.$cor-branco;
+
+        @media (max-width: 480px) {
+            font-size: 11px;
+        }
     }
 
     &__container {
@@ -47,6 +60,10 @@
             border-radius: 20px;
             color: variaveis.$cor-branco;
 
+            @media (max-width: 480px) {
+                padding: 15px;
+            }
+
             ul {
                 width: 100%;
                 padding-left: 18px;
@@ -54,6 +71,10 @@
                 li {
                     margin-bottom: 20px;
                     line-height: 26px;
+
+                    @media (max-width: 480px) {
+                        font-size: 14px;
+                    }
                 }
             }
 
@@ -66,11 +87,19 @@
                 margin: 0 auto;
                 gap: 100px;
 
+                @media (max-width: 480px) {
+                    display: block;
+                }
+
                 &__img {
                     border: 1px solid variaveis.$cor-azul1;
                     border-radius: 20px;
                     padding: 15px 15px 11px;
                     margin: auto;
+
+                    @media (max-width: 480px) {
+                        margin-bottom: 30px;
+                    }
                 }
             }
         }

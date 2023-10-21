@@ -91,41 +91,41 @@
 
     i {
         display: none;
+
+        @media (max-width: 480px) {
+            display: block;
+            font-size: 24px;
+            color: variaveis.$cor-branco;
+            cursor: pointer;
+            align-items: center;
+        }
     }
 
     .primary-navgation {
         display: flex;
         gap: 20px;
         align-items: center;
-    }
 
-    @media (max-width: 480px) {
-        .primary-navgation {
+        @media (max-width: 480px) {
             display: none;
-        }
-
-        .primary-navgation.active {
+            transition: right 0.3s ease-in-out;
             background: variaveis.$cor-cinza-fundo1;
             display: grid;
-            width: 128px;
+            width: 148px;
             position: absolute;
             top: 55px;
-            right: 0px;
+            right: -149px;
             //z-index: 5;
             padding: 15px;
             font-size: 1.6rem;
             //font-weight: bold;
             border-radius: 0 0px 5px 5px;
             box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
-            //animation: upSection .8s ease-in-out forwards;
-        }
+            gap: 34px;
 
-        i {
-            display: block;
-            font-size: 24px;
-            color: variaveis.$cor-branco;
-            cursor: pointer;
-            align-items: center;
+            &.active {
+                right: 0;
+            }
         }
     }
 }

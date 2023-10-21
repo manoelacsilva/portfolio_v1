@@ -19,8 +19,8 @@
         width: 500px;
 
         @media (max-width: 480px) {
-            width: 200px;
-            margin-top: 50px;
+            width: 250px;
+            margin-top: 70px;
         }
     }
 
@@ -35,12 +35,12 @@
         // border-right: .15em solid variaveis.$cor-branco; /* Simula o cursor de digitação */
 
         @media (max-width: 480px) {
-            font-size: 32px;
+            font-size: 36px;
             word-wrap: break-word;
             white-space: pre-wrap;
             line-height: 40px;
             min-height: 80px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
     }
 
@@ -54,7 +54,7 @@
 
         @media (max-width: 480px) {
             display: block;
-            padding: 30px;
+            padding: 50px 30px;
 
             .saudacao {
                 text-align: center;
@@ -82,11 +82,11 @@
         align-items: center;
 
         @media (max-width: 480px) {
-            font-size: 10px;
+            font-size: 12px;
             margin: auto;
-            width: 120px;
-            padding: 4px 1px 3px;
-            height: 28px;
+            width: 140px;
+            padding: 5px 3px 4px;
+            height: 30px;
             border: 1px solid variaveis.$cor-branco;
         }
 
@@ -100,9 +100,9 @@
         margin-bottom: 18px;
 
         @media (max-width: 480px) {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 25px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
     }
 
@@ -116,7 +116,7 @@
         padding-top: 250px;
 
         @media (max-width: 480px) {
-            padding-top: 40px;
+            padding-top: 30px;
         }
 
         &__img {
@@ -125,8 +125,8 @@
             animation: float 2.5s infinite;
 
             @media (max-width: 480px) {
-                height: 24px;
-                max-width: 24px;
+                height: 32px;
+                max-width: 32px;
             }
         }
     }
