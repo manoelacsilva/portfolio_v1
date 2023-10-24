@@ -4,6 +4,10 @@
     background-color: variaveis.$cor-cinza-fundo1;
     padding: 40px;
 
+    @media (max-width: 480px) {
+        padding: 30px;
+    }
+
     &__container {
         width: 100%;
         max-width: 1240px;
@@ -17,6 +21,10 @@
             color: variaveis.$cor-branco;
             font-size: 24px;
             font-weight: bold;
+
+            @media (max-width: 480px) {
+                font-size: 18px;
+            }
         }
 
         &__p1 {
@@ -24,6 +32,11 @@
             font-size: 16px;
             margin-top: 20px;
             letter-spacing: 2px;
+
+            @media (max-width: 480px) {
+                font-size: 12px;
+                margin-top: 10px;
+            }
         }
 
         &__redes {
@@ -35,11 +48,12 @@
                 img {
                     max-width: 32px;
                     width: 100%;
-                    margin: 20px 0;
-                }
+                    margin: 20px 10px;
 
-                .linkedin {
-                    margin: 20px 15px;
+                    @media (max-width: 480px) {
+                        max-width: 22px;
+                        margin: 10px 5px;
+                    }
                 }
             }
         }
@@ -52,9 +66,9 @@
             font-size: 13px;
             white-space: nowrap;
 
-            span {
-                padding: 0 0 3px 3px;
-                font-size: 19px;
+            @media (max-width: 480px) {
+                font-size: 11px;
+                white-space: normal;
             }
         }
     }

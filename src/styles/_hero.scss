@@ -5,13 +5,14 @@
     color: variaveis.$cor-branco;
     padding: 324px 0 100px;
     background-color: variaveis.$cor-cinza-fundo2;
-    //margin: 0 0 50px;
+    margin: 0 auto;
 
     @media (max-width: 480px) {
         padding: 0;
 
         .img-boneca {
             text-align: center;
+            margin-top: 70px;
         }
     }
 
@@ -20,7 +21,7 @@
 
         @media (max-width: 480px) {
             width: 250px;
-            margin-top: 70px;
+            //margin-top: 70px;
         }
     }
 
@@ -40,7 +41,7 @@
             white-space: pre-wrap;
             line-height: 40px;
             min-height: 80px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
     }
 
@@ -54,7 +55,7 @@
 
         @media (max-width: 480px) {
             display: block;
-            padding: 50px 30px;
+            padding: 50px 30px 30px;
 
             .saudacao {
                 text-align: center;
@@ -127,6 +128,7 @@
             @media (max-width: 480px) {
                 height: 32px;
                 max-width: 32px;
+                margin-bottom: 50px;
             }
         }
     }

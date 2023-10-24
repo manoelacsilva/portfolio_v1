@@ -4,6 +4,10 @@
     background-color: variaveis.$cor-cinza-fundo1;
     padding: 100px 0;
 
+    @media (max-width: 480px) {
+        padding: 50px 30px;
+    }
+
     &__container {
         width: 100%;
         max-width: 1240px;
@@ -25,6 +29,12 @@
             width: 100%;
             border-radius: 10px;
             padding-bottom: 5px;
+
+            @media (max-width: 480px) {
+                font-size: 24px;
+                max-width: 116px;
+                padding-bottom: 2px;
+            }
         }
 
         h3 {
@@ -36,6 +46,10 @@
             letter-spacing: 2px;
             font-size: 13px;
             color: variaveis.$cor-branco;
+
+            @media (max-width: 480px) {
+                font-size: 11px;
+            }
         }
 
         &__projetos {
@@ -46,6 +60,12 @@
             padding: 50px;
             border: 2px solid variaveis.$cor-cinza-fundo2;
             border-radius: 20px;
+
+            @media (max-width: 480px) {
+                padding: 15px;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 15px;
+            }
 
             &__projeto {
                 display: flex;
@@ -75,6 +95,12 @@
                     letter-spacing: 2px;
                     background-color: variaveis.$cor-cinza-fundo2;
 
+                    @media (max-width: 480px) {
+                        font-size: 12px;
+                        padding: 5px 3px 4px;
+                        height: 30px;
+                    }
+
                     &:hover {
                         background-color: variaveis.$cor-preto;
                     }
@@ -98,6 +124,11 @@
         transform: scale(0);
         //transition: opacity .25s, transform 0.25s ;
 
+        @media (max-width: 480px) {
+            //height: 100%;
+            width: 80%;
+        }
+
         .modal-content {
             width: 90%;
             max-width: 580px;
@@ -109,6 +140,13 @@
             border: 2px solid variaveis.$cor-preto;
             box-shadow: 0 0 11px 11px rgba(0, 0, 0, 0.5);
 
+            @media (max-width: 480px) {
+                width: 50%;
+                //margin: 20px;
+                //align-items: ce;
+                padding: 30px;
+            }
+
             .fechar {
                 position: absolute;
                 top: 0;
@@ -118,6 +156,11 @@
                 cursor: pointer;
                 color: variaveis.$cor-branco;
                 margin: 7px 4px 0 0;
+
+                @media (max-width: 480px) {
+                    max-width: 26px;
+                    margin: 6px 4px 0;
+                }
             }
 
             .modal-img-projeto {
@@ -135,6 +178,11 @@
                 width: 100%;
                 //border-radius: 10px;
                 //padding-bottom: 5px;
+
+                @media (max-width: 480px) {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
             }
 
             .text {
@@ -142,6 +190,10 @@
                 margin: 0 0 15px;
                 text-align: center;
                 line-height: 26px;
+
+                @media (max-width: 480px) {
+                    font-size: 14px;
+                }
             }
 
             .techs {
@@ -149,6 +201,11 @@
                 margin: 0 0 50px;
                 text-align: center;
                 line-height: 26px;
+
+                @media (max-width: 480px) {
+                    font-size: 14px;
+                    margin: 0 0 15px;
+                }
             }
 
             .links {
@@ -157,6 +214,11 @@
                 justify-content: space-between;
                 height: 50px;
                 margin-top: 50px;
+
+                @media (max-width: 480px) {
+                    margin-top: 15px;
+                    height: auto;
+                }
 
                 a {
                     background-color: variaveis.$cor-cinza-fundo1;
@@ -173,10 +235,22 @@
                     border: 1px solid variaveis.$cor-branco;
                     min-width: 140px;
 
+                    @media (max-width: 480px) {
+                        font-size: 12px;
+                        padding: 5px 3px 5px;
+                        height: 30px;
+                        width: 115px;
+                        min-width: 0px;
+                    }
+
                     img {
                         max-width: 26px;
                         width: 100%;
                         margin-right: 10px;
+
+                        @media (max-width: 480px) {
+                            max-width: 20px;
+                        }
                     }
 
                     span {

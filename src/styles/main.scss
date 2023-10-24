@@ -34,6 +34,10 @@ html::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     width: 30px;
+
+    @media (max-width: 480px) {
+        width: 24px;
+    }
 }
 
 .voltar-ao-topo {
@@ -49,6 +53,12 @@ html::-webkit-scrollbar-thumb {
     background-color: variaveis.$cor-preto;
     transition: all .7s ease;
     border-radius: 10px;
+
+    @media (max-width: 480px) {
+        right: 160px;
+        bottom: 80px;
+        padding: 5px;
+    }
 
     &:hover {
         background-color: variaveis.$cor-azul1;

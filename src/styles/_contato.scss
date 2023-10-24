@@ -3,6 +3,10 @@
 .section5 {
     padding: 100px 0;
 
+    @media (max-width: 480px) {
+        padding: 50px 30px;
+    }
+
     &__title {
         display: flex;
         flex-direction: column;
@@ -24,6 +28,12 @@
             width: 100%;
             border-radius: 10px;
             padding-bottom: 5px;
+
+            @media (max-width: 480px) {
+                font-size: 24px;
+                max-width: 116px;
+                padding-bottom: 2px;
+            }
         }
     
         h3 {
@@ -35,6 +45,10 @@
             letter-spacing: 2px;
             font-size: 13px;
             color: variaveis.$cor-branco;
+
+            @media (max-width: 480px) {
+                font-size: 11px;
+            }
         }
     }
 
@@ -49,12 +63,21 @@
         padding: 50px;
         border-radius: 20px;
 
+        @media (max-width: 480px) {
+            padding: 15px;
+            display: block;
+        }
+
         &__form {
             .campos {
                 display: flex;
                 flex-direction: column;
                 min-width: 570px;
                 width: 100%;
+
+                @media (max-width: 480px) {
+                    min-width: 0;
+                }
 
                 input, textarea {
                     border-radius: 10px;
@@ -65,15 +88,28 @@
                     font-size: 16px;
                     padding: 8px;
                     margin-bottom: 40px;
+
+                    @media (max-width: 480px) {
+                        font-size: 14px;
+                        margin-bottom: 15px;
+                    }
                 }
 
                 textarea {
                     resize: none;
                     height: 100px;
+
+                    @media (max-width: 480px) {
+                        height: 80px;
+                    }
                 }
 
                 input {
                     height: 50px;
+
+                    @media (max-width: 480px) {
+                        height: 40px;
+                    }
                 }
 
                 label {
@@ -82,6 +118,11 @@
                     font-weight: bold;
                     letter-spacing: 2px;
                     margin-bottom: 10px;
+
+                    @media (max-width: 480px) {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
                 }
             }
 
@@ -98,6 +139,15 @@
                 color: variaveis.$cor-branco;
                 letter-spacing: 2px;
                 background-color: variaveis.$cor-cinza-fundo1;
+
+                @media (max-width: 480px) {
+                    font-size: 12px;
+                    padding: 6px 3px 3.5px;
+                    height: 30px;
+                    margin-bottom: 50px;
+                    max-width: 0;
+                    min-width: 100%;
+                }
 
                 &:hover {
                     background-color: variaveis.$cor-preto;
@@ -127,16 +177,34 @@
                     font-weight: bold;
                     letter-spacing: 2px;
                     font-size: 18px;
+
+                    @media (max-width: 480px) {
+                        font-size: 14px;
+                    }
+                }
+
+                p {
+                    @media (max-width: 480px) {
+                        font-size: 11px;
+                    }
                 }
             }
 
             .mb {
                 margin-bottom: 30px;
+
+                @media (max-width: 480px) {
+                    margin-bottom: 15px;
+                }
             }
 
             img {
                 height: 40px;
                 margin-bottom: 10px;
+
+                @media (max-width: 480px) {
+                    height: 30px;
+                }
             }
         }
     }
