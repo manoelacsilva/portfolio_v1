@@ -12,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comfortaa', sans-serif;
+    //overflow-x: hidden;
 }
 
 body {
@@ -36,7 +37,7 @@ html::-webkit-scrollbar-thumb {
     width: 30px;
 
     @media (max-width: 480px) {
-        width: 24px;
+        width: 27px;
     }
 }
 
@@ -55,8 +56,8 @@ html::-webkit-scrollbar-thumb {
     border-radius: 10px;
 
     @media (max-width: 480px) {
-        right: 160px;
-        bottom: 80px;
+        right: 35px;
+        bottom: 65px;
         padding: 5px;
     }
 

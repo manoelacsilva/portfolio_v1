@@ -124,11 +124,6 @@
         transform: scale(0);
         //transition: opacity .25s, transform 0.25s ;
 
-        @media (max-width: 480px) {
-            //height: 100%;
-            width: 80%;
-        }
-
         .modal-content {
             width: 90%;
             max-width: 580px;
@@ -141,10 +136,11 @@
             box-shadow: 0 0 11px 11px rgba(0, 0, 0, 0.5);
 
             @media (max-width: 480px) {
-                width: 50%;
+                width: 90%;
                 //margin: 20px;
                 //align-items: ce;
                 padding: 30px;
+                box-shadow: none;
             }
 
             .fechar {
@@ -178,6 +174,7 @@
                 width: 100%;
                 //border-radius: 10px;
                 //padding-bottom: 5px;
+                line-height: 26px;
 
                 @media (max-width: 480px) {
                     font-size: 18px;
@@ -193,6 +190,7 @@
 
                 @media (max-width: 480px) {
                     font-size: 14px;
+                    line-height: 18px;
                 }
             }
 
@@ -205,6 +203,7 @@
                 @media (max-width: 480px) {
                     font-size: 14px;
                     margin: 0 0 15px;
+                    line-height: 18px;
                 }
             }
 
@@ -238,7 +237,7 @@
                     @media (max-width: 480px) {
                         font-size: 12px;
                         padding: 5px 3px 5px;
-                        height: 30px;
+                        height: auto;
                         width: 115px;
                         min-width: 0px;
                     }
