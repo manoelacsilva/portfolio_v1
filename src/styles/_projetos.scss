@@ -128,12 +128,14 @@
             width: 90%;
             max-width: 580px;
             height: auto;
+            max-height: 560px;
             background-color: variaveis.$cor-cinza-fundo2;
-            padding: 50px;
+            padding: 40px;
             border-radius: 20px;
             position: relative;
             border: 2px solid variaveis.$cor-preto;
             box-shadow: 0 0 11px 11px rgba(0, 0, 0, 0.5);
+            text-align: center;
 
             @media (max-width: 480px) {
                 width: 90%;
@@ -161,13 +163,13 @@
 
             .modal-img-projeto {
                 border-radius: 20px;
-                width: 100%; 
+                width: 75%; 
                 max-height: 267px;
             }
 
             .title {
                 font-size: 24px;
-                margin-bottom: 50px;
+                margin-bottom: 20px;
                 text-align: center;
                 color: variaveis.$cor-azul1;
                 //border-bottom: 3px solid variaveis.$cor-azul1;
@@ -186,7 +188,7 @@
                 color: variaveis.$cor-branco;
                 margin: 0 0 15px;
                 text-align: center;
-                line-height: 26px;
+                line-height: 22px;
 
                 @media (max-width: 480px) {
                     font-size: 14px;
@@ -196,12 +198,13 @@
 
             .techs {
                 color: variaveis.$cor-branco;
-                margin: 0 0 50px;
+                margin: 0 0 20px;
                 text-align: center;
-                line-height: 26px;
+                line-height: 22px;
+                font-size: 14px;
 
                 @media (max-width: 480px) {
-                    font-size: 14px;
+                    font-size: 13px;
                     margin: 0 0 15px;
                     line-height: 18px;
                 }
@@ -211,8 +214,8 @@
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
-                height: 50px;
-                margin-top: 50px;
+                height: 40px;
+                margin-top: 20px;
 
                 @media (max-width: 480px) {
                     margin-top: 15px;
@@ -230,7 +233,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    padding: 10px;
+                    padding: 6px;
                     border: 1px solid variaveis.$cor-branco;
                     min-width: 140px;
 
