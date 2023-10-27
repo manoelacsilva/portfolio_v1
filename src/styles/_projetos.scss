@@ -140,10 +140,9 @@
 
             @media (max-width: 480px) {
                 width: 90%;
-                //margin: 20px;
-                //align-items: ce;
                 padding: 30px;
                 box-shadow: none;
+                margin-top: 0;
             }
 
             .fechar {
@@ -166,6 +165,10 @@
                 border-radius: 20px;
                 width: 65%; 
                 max-height: 267px;
+
+                @media (max-width: 480px) {
+                    width: 100%;
+                }
             }
 
             .title {
