@@ -115,7 +115,7 @@ saibaMais.forEach((projeto, index) => {
 })
 
 buttonFecharModal.addEventListener('click', fecharModal);
-// modalProjetos.addEventListener('click', fecharModal);
+modalProjetos.addEventListener('click', fecharModal);
 
 // Botão subir para Hero - Fixo
 
