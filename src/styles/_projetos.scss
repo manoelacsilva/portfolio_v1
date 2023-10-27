@@ -130,12 +130,13 @@
             height: auto;
             max-height: 560px;
             background-color: variaveis.$cor-cinza-fundo2;
-            padding: 40px;
+            padding: 35px;
             border-radius: 20px;
             position: relative;
             border: 2px solid variaveis.$cor-preto;
             box-shadow: 0 0 11px 11px rgba(0, 0, 0, 0.5);
             text-align: center;
+            margin-top: 50px;
 
             @media (max-width: 480px) {
                 width: 90%;
@@ -149,7 +150,7 @@
                 position: absolute;
                 top: 0;
                 right: 0.5%;
-                max-width: 36px;
+                max-width: 30px;
                 z-index: 1;
                 cursor: pointer;
                 color: variaveis.$cor-branco;
@@ -163,7 +164,7 @@
 
             .modal-img-projeto {
                 border-radius: 20px;
-                width: 75%; 
+                width: 65%; 
                 max-height: 267px;
             }
 
@@ -188,7 +189,8 @@
                 color: variaveis.$cor-branco;
                 margin: 0 0 15px;
                 text-align: center;
-                line-height: 22px;
+                line-height: 20px;
+                font-size: 15px;
 
                 @media (max-width: 480px) {
                     font-size: 14px;
@@ -200,7 +202,7 @@
                 color: variaveis.$cor-branco;
                 margin: 0 0 20px;
                 text-align: center;
-                line-height: 22px;
+                line-height: 20px;
                 font-size: 14px;
 
                 @media (max-width: 480px) {
@@ -214,7 +216,7 @@
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
-                height: 40px;
+                height: 34px;
                 margin-top: 20px;
 
                 @media (max-width: 480px) {
@@ -236,6 +238,7 @@
                     padding: 6px;
                     border: 1px solid variaveis.$cor-branco;
                     min-width: 140px;
+                    font-size: 14px;
 
                     @media (max-width: 480px) {
                         font-size: 12px;
@@ -246,7 +249,7 @@
                     }
 
                     img {
-                        max-width: 26px;
+                        max-width: 23px;
                         width: 100%;
                         margin-right: 10px;
 
