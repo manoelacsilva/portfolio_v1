@@ -48,7 +48,16 @@
         overflow: hidden; /* Esconde texto além da largura do elemento */
         // border-right: .15em solid variaveis.$cor-branco; /* Simula o cursor de digitação */
 
-        @media (max-width: 480px) {
+        @media (max-width: 357px) {
+            font-size: 29px;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+            line-height: 40px;
+            min-height: 80px;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 358px) and (max-width: 480px) {
             font-size: 36px;
             word-wrap: break-word;
             white-space: pre-wrap;

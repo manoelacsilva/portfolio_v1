@@ -8,6 +8,10 @@
         padding: 30px;
     }
 
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 30px;
+    }
+
     &__container {
         width: 100%;
         max-width: 1240px;
@@ -25,6 +29,10 @@
             @media (max-width: 480px) {
                 font-size: 18px;
             }
+
+            @media (min-width: 481px) and (max-width: 767px) {
+                font-size: 20px;
+            }
         }
 
         &__p1 {
@@ -36,6 +44,11 @@
             @media (max-width: 480px) {
                 font-size: 12px;
                 margin-top: 10px;
+            }
+
+            @media (min-width: 481px) and (max-width: 767px) {
+                font-size: 14px;
+                margin-top: 15px;
             }
         }
 
@@ -54,6 +67,11 @@
                         max-width: 22px;
                         margin: 10px 5px;
                     }
+
+                    @media (min-width: 481px) and (max-width: 767px) {
+                        max-width: 27px;
+                        margin: 15px 8px;
+                    }
                 }
             }
         }
@@ -65,9 +83,15 @@
             color: variaveis.$cor-branco;
             font-size: 13px;
             white-space: nowrap;
+            line-height: 15px;
 
             @media (max-width: 480px) {
                 font-size: 11px;
+                white-space: normal;
+            }
+
+            @media (min-width: 481px) and (max-width: 767px) {
+                font-size: 12px;
                 white-space: normal;
             }
         }

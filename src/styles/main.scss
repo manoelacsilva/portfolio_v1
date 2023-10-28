@@ -64,6 +64,11 @@ html::-webkit-scrollbar-thumb {
         padding: 5px;
     }
 
+    @media (min-width: 481px) and (max-width: 767px) {
+        right: 15px;
+        bottom: 65px;
+    }
+
     &:hover {
         background-color: variaveis.$cor-azul1;
     }

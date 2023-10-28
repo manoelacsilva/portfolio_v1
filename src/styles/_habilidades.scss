@@ -7,10 +7,18 @@
         padding: 50px 30px;
     }
 
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 50px 30px;
+    }
+
     .less {
         padding: 15px 0;
 
-        @media (max-width: 480px) {
+        @media (max-width: 357px) {
+            padding: 8px 0;
+        }
+
+        @media (min-width: 358px) and (max-width: 480px) {
             padding: 10px 0;
         }
     }
@@ -20,9 +28,14 @@
         width: auto;
         margin-bottom: 20px;
 
-        @media (max-width: 480px) {
-            height: 40px;
+        @media (max-width: 357px) {
+            height: 34px;
             margin-bottom: 10px;
+        }
+
+        @media (min-width: 358px) and (max-width: 480px) {
+            height: 40px;
+            margin-bottom: 15px;
         }
     }
 
@@ -53,6 +66,12 @@
                 max-width: 168px;
                 padding-bottom: 2px;
             }
+
+            @media (min-width: 481px) and (max-width: 767px) {
+                font-size: 28px;
+                max-width: 197px;
+                padding-bottom: 4px;
+            }
         }
 
         h3 {
@@ -68,6 +87,10 @@
             @media (max-width: 480px) {
                 font-size: 11px;
             }
+
+            @media (min-width: 481px) and (max-width: 767px) {
+                font-size: 12px;
+            }
         }
 
         ul {
@@ -79,9 +102,21 @@
             border: 2px solid variaveis.$cor-cinza-fundo1;
             border-radius: 20px;
 
-            @media (max-width: 480px) {
-                grid-template-columns: repeat(3, 1fr);
+            @media (max-width: 357px) {
+                grid-template-columns: repeat(2, 1fr);
                 padding: 15px;
+                gap: 22px;
+            }
+
+            @media (min-width: 358px) and (max-width: 480px) {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 15px;
+                gap: 28px;
+            }
+
+            @media (min-width: 481px) and (max-width: 767px) {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 20px;
                 gap: 30px;
             }
 
@@ -93,8 +128,28 @@
                 justify-content: space-between;
                 color: variaveis.$cor-branco;
 
-                @media (max-width: 480px) {
+                @media (max-width: 357px) {
+                    font-size: 12px;
+                }
+
+                @media (min-width: 358px) and (max-width: 480px) {
                     font-size: 14px;
+                }
+
+                p {
+                    margin-top: 15px;
+                    letter-spacing: 1.5px;
+                    font-size: 12px;
+
+                    @media (max-width: 357px) {
+                        font-size: 11px;
+                        margin-top: 10px;
+                    }
+
+                    @media (min-width: 358px) and (max-width: 480px) {
+                        font-size: 11px;
+                        margin-top: 10px;
+                    }
                 }
             }
         }

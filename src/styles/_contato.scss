@@ -7,6 +7,10 @@
         padding: 50px 30px;
     }
 
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 50px 30px;
+    }
+
     &__title {
         display: flex;
         flex-direction: column;
@@ -34,6 +38,12 @@
                 max-width: 116px;
                 padding-bottom: 2px;
             }
+
+            @media (min-width: 481px) and (max-width: 767px) {
+                font-size: 28px;
+                max-width: 135px;
+                padding-bottom: 4px;
+            }
         }
     
         h3 {
@@ -48,6 +58,10 @@
 
             @media (max-width: 480px) {
                 font-size: 11px;
+            }
+
+            @media (min-width: 481px) and (max-width: 767px) {
+                font-size: 12px;
             }
         }
     }
@@ -68,6 +82,11 @@
             display: block;
         }
 
+        @media (min-width: 481px) and (max-width: 767px) {
+            padding: 20px;
+            display: block;
+        }
+
         &__form {
             .campos {
                 display: flex;
@@ -76,6 +95,10 @@
                 width: 100%;
 
                 @media (max-width: 480px) {
+                    min-width: 0;
+                }
+
+                @media (min-width: 481px) and (max-width: 767px) {
                     min-width: 0;
                 }
 
@@ -92,6 +115,11 @@
                     @media (max-width: 480px) {
                         font-size: 14px;
                         margin-bottom: 15px;
+                    }
+
+                    @media (min-width: 481px) and (max-width: 767px) {
+                        font-size: 14px;
+                        margin-bottom: 20px;
                     }
                 }
 
@@ -149,6 +177,12 @@
                     min-width: 100%;
                 }
 
+                @media (min-width: 481px) and (max-width: 767px) {
+                    margin-bottom: 50px;
+                    max-width: 0;
+                    min-width: 100%;
+                }
+
                 &:hover {
                     background-color: variaveis.$cor-preto;
                 }
@@ -195,6 +229,10 @@
 
                 @media (max-width: 480px) {
                     margin-bottom: 15px;
+                }
+
+                @media (min-width: 481px) and (max-width: 767px) {
+                    margin-bottom: 20px;
                 }
             }
 
