@@ -50,7 +50,7 @@
             <div class="saudacao">
                 <p>Hello, world! Me chamo <b>Manoela Coelho</b> e eu sou</p>
                 <h1 id="typed-text"></h1>
-                <!-- <a class="botao" href="">Download CV</a> -->
+                <a class="botao" href="src/assets/cv-manoela-coelho.pdf" download="Currículo-Manoela-Coelho">Download CV</a>
             </div>
             <div class="img-boneca">
                 <img data-aos="fade-left" data-aos-duration="1500" src="./dist/images/undraw_web_devices_re_m8sc.svg" alt="Balão da boneca com os dispositivos">
@@ -68,7 +68,7 @@
             <h2>Sobre Mim</h2>
             <h3>Apresentação Pessoal</h3>
         </div>
-        <div data-aos="flip-up" data-aos-duration="1500" class="section2__container">
+        <div class="section2__container">
             <div class="section2__container__sobre">
                 <div class="section2__container__sobre__infos">
                     <div class="section2__container__sobre__infos__img">
@@ -76,7 +76,7 @@
                     </div>
                     <ul>
                         <li>Olá! Meu nome é Manoela, mas pode me chamar de Manô;</li>
-                        <li>Tenho 18 anos - curiosidade*: sou do signo de Touro;</li>
+                        <li>Tenho 18 anos;</li>
                         <li>Estou cursando Desenvolvimento Full-Stack Python na EBAC (Escola Britânica de Artes Criativas e Tecnologia) desde junho de 2023;</li>
                         <li>Concluí o Ensino Médio em 2022;</li>
                         <li>Moro em Florianópolis/SC, minha cidade natal;</li>
@@ -95,77 +95,79 @@
                 <h2>Habilidades</h2>
                 <h3>Conhecimentos Técnicos</h3>
             </div>
-            <div data-aos="flip-up" data-aos-duration="1500" class="section1__container__grid">
-                <ul>
-                    <li>
+            <div class="section3__container__grid">
+                <ul class="carousel" id="carousel">
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">
                         <img src="./dist/images/html-5.png" alt="HTML5">
                         <span>HTML</span>
-                        <p>Avançado</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
                         <img src="./dist/images/css-3.png" alt="CSS3">
                         <span>CSS</span>
-                        <p>Avançado</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
                         <img src="./dist/images/bootstrap_logo.svg" alt="Bootstrap">
                         <span>Bootstrap</span>
-                        <p>Intermediário</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
                         <img src="./dist/images/sass_logo.png" alt="SASS">
                         <span>SASS</span>
-                        <p>Avançado</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
                         <img class="less" src="./dist/images/less.png" alt="LESS">
                         <span>LESS</span>
-                        <p>Intermediário</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
                         <img src="./dist/images/gulp.png" alt="Gulp">
                         <span>Gulp</span>
-                        <p>Intermediário</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="700">
                         <img src="./dist/images/grunt.png" alt="Grunt">
                         <span>Grunt</span>
-                        <p>Básico</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="800">
                         <img src="./dist/images/js.png" alt="JS">
                         <span>JavaScript</span>
-                        <p>Intermediário</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900">
                         <img src="./dist/images/typescript.png" alt="TS">
                         <span>TypeScript</span>
-                        <p>Básico</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
                         <img src="./dist/images/jquery.png" alt="jQuery">
                         <span>jQuery</span>
-                        <p>Básico</p>
                     </li>
-                    <li>
-                        <img src="./dist/images/react-original.svg" alt="React">
-                        <span>React</span>
-                        <p>Básico</p>
-                    </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1100">
                         <img src="./dist/images/vuejs.svg" alt="Vue">
                         <span>Vue</span>
-                        <p>Básico</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1200">
+                        <img src="./dist/images/react-original.svg" alt="React">
+                        <span>React</span>
+                    </li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1300">
+                        <img src="./dist/images/redux.svg" alt="Redux">
+                        <span>Redux</span>
+                    </li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1400">
+                        <img src="./dist/images/jest.svg" alt="Jest">
+                        <span>Jest</span>
+                    </li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1500">
                         <img src="./dist/images/git-original.svg" alt="Git">
                         <span>Git</span>
-                        <p>Intermediário</p>
                     </li>
-                    <li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1600">
                         <img src="./dist/images/github.png" alt="GitHub">
                         <span>GitHub</span>
-                        <p>Avançado</p>
+                    </li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700">
+                        <img src="./dist/images/vscode.svg" alt="VSCode">
+                        <span>VSCode</span>
+                    </li>
+                    <li class="carousel__item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                        <img src="./dist/images/figma.svg" alt="Figma">
+                        <span>Figma</span>
                     </li>
                 </ul>
             </div>
@@ -199,7 +201,19 @@
                 <h2>Projetos</h2>
                 <h3>Prática & Determinação</h3>
             </div>
-            <div data-aos="flip-up" data-aos-duration="1500" class="section4__container__projetos">
+            <div class="section4__container__projetos">
+                <div class="section4__container__projetos__projeto">
+                    <img class="img-projeto" src="./dist/images/efood.png" alt="EFOOD">
+                    <button class="projeto saiba-mais" type="button">Saiba mais</button>
+                </div>
+                <div class="section4__container__projetos__projeto">
+                    <img class="img-projeto" src="./dist/images/EPLAY.png" alt="EPLAY">
+                    <button class="projeto saiba-mais" type="button">Saiba mais</button>
+                </div>
+                <div class="section4__container__projetos__projeto">
+                    <img class="img-projeto" src="./dist/images/Minhas-Tarefas.png" alt="Minhas Tarefas">
+                    <button class="projeto saiba-mais" type="button">Saiba mais</button>
+                </div>
                 <div class="section4__container__projetos__projeto">
                     <img class="img-projeto" src="./dist/images/O Próximo Mundo _ QUIZ.png" alt="QUIZ OPM">
                     <button class="projeto saiba-mais" type="button">Saiba mais</button>
@@ -209,19 +223,19 @@
                     <button class="projeto saiba-mais" type="button">Saiba mais</button>
                 </div>
                 <div class="section4__container__projetos__projeto">
-                    <img class="img-projeto" src="./dist/images/Calculadora IMC _ ReactJS.png" alt="Calculadora IMC React">
-                    <button class="projeto saiba-mais" type="button">Saiba mais</button>
-                </div>
-                <div class="section4__container__projetos__projeto">
-                    <img class="img-projeto" src="./dist/images/Calculadora VueJS (1).png" alt="Calculadora Vue">
-                    <button class="projeto saiba-mais" type="button">Saiba mais</button>
-                </div>
-                <div class="section4__container__projetos__projeto">
                     <img class="img-projeto" src="./dist/images/DisneyPlusClone.png" alt="Clone Disney+">
                     <button class="projeto saiba-mais" type="button">Saiba mais</button>
                 </div>
                 <div class="section4__container__projetos__projeto">
                     <img class="img-projeto" src="./dist/images/Fuoco Degli Dei _ Ristorante Italiano.png" alt="Fuoco Degli Dei">
+                    <button class="projeto saiba-mais" type="button">Saiba mais</button>
+                </div>
+                <div class="section4__container__projetos__projeto">
+                    <img class="img-projeto" src="./dist/images/Expert-Notes.png" alt="Expert Notes">
+                    <button class="projeto saiba-mais" type="button">Saiba mais</button>
+                </div>
+                <div class="section4__container__projetos__projeto">
+                    <img class="img-projeto" src="./dist/images/Calculadora VueJS (1).png" alt="Calculadora Vue">
                     <button class="projeto saiba-mais" type="button">Saiba mais</button>
                 </div>
             </div>
@@ -233,7 +247,7 @@
             <h2>Contato</h2>
             <h3>Me mande uma mensagem!</h3>
         </div>
-        <div data-aos="flip-up" data-aos-duration="1500" class="section5__container">
+        <div class="section5__container">
             <form class="section5__container__form" action="https://formsubmit.co/manoelacs62@gmail.com" method="POST">
                 <div class="campos">
                     <label for="nome">Nome:</label>
@@ -274,8 +288,11 @@
             <a class="footer__container__title" href="" id="inicio"> <span>< Manoela /></span> </a>
             <p class="footer__container__p1">Me acompanhe nas redes</p>
             <div class="footer__container__redes">
-                <a href="https://www.instagram.com/hello.manoela/">
+                <!-- <a href="https://www.instagram.com/hello.manoela/">
                     <img src="./dist/images/insta.png" alt="">
+                </a> -->
+                <a href="mailto:manoelacs62@gmail.com">
+                    <img src="./dist/images/email2.png" alt="">
                 </a>
                 <a href="https://www.linkedin.com/in/manoela-fullstack-python/" class="sociais mb">
                     <img class="linkedin" src="./dist/images/linkedin.png" alt="">

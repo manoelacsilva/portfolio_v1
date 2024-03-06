@@ -95,7 +95,7 @@
 
         ul {
             display: grid;
-            grid-template-columns: repeat(7, 1fr);
+            grid-template-columns: repeat(6, 1fr);
             gap: 50px;
             width: 100%;
             padding: 50px;
@@ -104,19 +104,19 @@
 
             @media (max-width: 357px) {
                 grid-template-columns: repeat(2, 1fr);
-                padding: 15px;
+                padding: 30px 15px;
                 gap: 22px;
             }
 
             @media (min-width: 358px) and (max-width: 480px) {
                 grid-template-columns: repeat(2, 1fr);
-                padding: 15px;
+                padding: 30px 15px;
                 gap: 28px;
             }
 
             @media (min-width: 481px) and (max-width: 767px) {
                 grid-template-columns: repeat(3, 1fr);
-                padding: 20px;
+                padding: 40px 20px;
                 gap: 30px;
             }
 

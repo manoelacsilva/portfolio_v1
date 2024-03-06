@@ -32,6 +32,30 @@ let deployVercel = document.querySelector('#button-deploy-modal');
 
 const projetos = [
     {
+        title: 'Efood',
+        src: './dist/images/efood.png',
+        text: 'Este é o Efood, um e-commerce de restaurantes para delivery. A página possui 6 estabelecimentos, cada um com seu respectivo cardápio.',
+        tech: 'Feito com: React, TypeScript, Styled-Components, Redux, Yup, Formik e Prettier.',
+        code: 'https://github.com/manoelacsilva/efood_tarefa_final_ebac',
+        deploy: 'https://mcs-efood-tarefa-final-ebac.vercel.app/'
+    },
+    {
+        title: 'EPLAY',
+        src: './dist/images/EPLAY.png',
+        text: 'Este é o EPLAY, um e-commerce para compra de jogos on-line, tudo muito dinâmico e prático para facilitar a experiência do usuário.',
+        tech: 'Feito com: React, TypeScript, Styled-Components, Redux, Yup, Formik e Eslint.',
+        code: 'https://github.com/manoelacsilva/eplay_projeto_final_ebac',
+        deploy: 'https://mcs-eplay-projeto-final-ebac.vercel.app/'
+    },
+    {
+        title: 'Minhas Tarefas',
+        src: './dist/images/Minhas-Tarefas.png',
+        text: 'Esta To-Do List possui a função de organizar tarefas, podendo criar, editar, remover, concluir e buscar tarefas a qualquer momento.',
+        tech: 'Feito com: React, TypeScript, Styled-Components, Redux, Eslint, EditorConfig e Prettier.',
+        code: 'https://github.com/manoelacsilva/minhas-tarefas',
+        deploy: 'https://mcs-minhas-tarefas.vercel.app/'
+    },
+    {
         title: 'QUIZ - O Próximo Mundo',
         src: './dist/images/O Próximo Mundo _ QUIZ.png',
         text: 'Este QUIZ é sobre "O Próximo Mundo", uma série de animação brasileira. Elaborei 14 perguntas que só quem é fã consegue responder sem errar! Quer tentar gabaritar?',
@@ -48,22 +72,6 @@ const projetos = [
         deploy: 'https://mcs-jogo-hora-de-aventura.vercel.app/'
     },
     {
-        title: 'Calculadora IMC ReactJS',
-        src: './dist/images/Calculadora IMC _ ReactJS.png',
-        text: 'Para calcular seu IMC você precisa adicionar dois dados: seu peso e sua altura. Depois, clique em "Calcular" para saber o resultado do seu IMC e o seu grau de obesidade.',
-        tech: 'Feito com: Git, React + Vite, CSS3 e HTML5.',
-        code: 'https://github.com/manoelacsilva/calculadora_imc_react',
-        deploy: 'https://mcs-calculadora-imc-react.vercel.app/'
-    },
-    {
-        title: 'Calculadora Aritmética VueJS',
-        src: './dist/images/Calculadora VueJS (1).png',
-        text: 'Com esta calculadora é possível realizar cálculos de adição, subtração, multiplicação e divisão. Ao adicionar os valores, o resultado aparece automaticamente.',
-        tech: 'Feito com: Git, Vue + Vite, JS, CSS3 e HTML5.',
-        code: 'https://github.com/manoelacsilva/calculadora_vue',
-        deploy: 'https://mcs-calculadora-vue.vercel.app/'
-    },
-    {
         title: 'Clone da Landing Page da Disney+',
         src: './dist/images/DisneyPlusClone.png',
         text: 'Esta Landing Page é um clone do site da Disney+. Usei JavaScript para criar a dinâmica do header, nas abas da section de atrações e para fazer o accordion da section FAQ.',
@@ -78,7 +86,23 @@ const projetos = [
         tech: 'Feito com: Git, HTML5, Bootstrap, CSS3 e jQuery (para colocar máscara no campo "Seu telefone").',
         code: 'https://github.com/manoelacsilva/fuocodeglidei_bs',
         deploy: 'https://mcs-fuocodeglidei-bs.vercel.app/'
-    }
+    },
+    {
+        title: 'Expert Notes',
+        src: './dist/images/Expert-Notes.png',
+        text: 'Este software é um bloco de notas que permite criar notas por meio de digitação ou gravação de aúdio, usando uma API externa para reconhecimento de voz e transcrição.',
+        tech: 'Feito com: React, TypeScript, TailwindCSS, Vite, Radix UI e Sonner.',
+        code: 'https://github.com/manoelacsilva/nlw-expert-notes',
+        deploy: 'https://mcs-nlw-expert-notes.vercel.app/'
+    },
+    {
+        title: 'Calculadora Aritmética VueJS',
+        src: './dist/images/Calculadora VueJS (1).png',
+        text: 'Com esta calculadora é possível realizar cálculos de adição, subtração, multiplicação e divisão. Ao adicionar os valores, o resultado aparece automaticamente.',
+        tech: 'Feito com: Git, Vue + Vite, JS, CSS3 e HTML5.',
+        code: 'https://github.com/manoelacsilva/calculadora_vue',
+        deploy: 'https://mcs-calculadora-vue.vercel.app/'
+    },
 ]
 
 const abrirModal = () => {
